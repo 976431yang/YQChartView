@@ -15,6 +15,7 @@
 		95197E0E1E813CFC0067140A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95197E0C1E813CFC0067140A /* LaunchScreen.storyboard */; };
 		95197E191E813CFD0067140A /* YQChartViewDEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95197E181E813CFD0067140A /* YQChartViewDEMOTests.m */; };
 		95197E241E813CFD0067140A /* YQChartViewDEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95197E231E813CFD0067140A /* YQChartViewDEMOUITests.m */; };
+		959596B71E82E0C90035553A /* YQChartBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959596B61E82E0C90035553A /* YQChartBarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		95197E1F1E813CFD0067140A /* YQChartViewDEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQChartViewDEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95197E231E813CFD0067140A /* YQChartViewDEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQChartViewDEMOUITests.m; sourceTree = "<group>"; };
 		95197E251E813CFD0067140A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		959596B51E82E0C90035553A /* YQChartBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQChartBarView.h; sourceTree = "<group>"; };
+		959596B61E82E0C90035553A /* YQChartBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQChartBarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				95197E021E813CFC0067140A /* AppDelegate.m */,
 				95197E041E813CFC0067140A /* ViewController.h */,
 				95197E051E813CFC0067140A /* ViewController.m */,
+				959596B51E82E0C90035553A /* YQChartBarView.h */,
+				959596B61E82E0C90035553A /* YQChartBarView.m */,
 				95197E071E813CFC0067140A /* Main.storyboard */,
 				95197E0A1E813CFC0067140A /* Assets.xcassets */,
 				95197E0C1E813CFC0067140A /* LaunchScreen.storyboard */,
@@ -279,6 +284,7 @@
 				95197E061E813CFC0067140A /* ViewController.m in Sources */,
 				95197E031E813CFC0067140A /* AppDelegate.m in Sources */,
 				95197E001E813CFC0067140A /* main.m in Sources */,
+				959596B71E82E0C90035553A /* YQChartBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +520,7 @@
 				95197E2A1E813CFD0067140A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95197E2B1E813CFD0067140A /* Build configuration list for PBXNativeTarget "YQChartViewDEMOTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +529,7 @@
 				95197E2D1E813CFD0067140A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95197E2E1E813CFD0067140A /* Build configuration list for PBXNativeTarget "YQChartViewDEMOUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +538,7 @@
 				95197E301E813CFD0067140A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
