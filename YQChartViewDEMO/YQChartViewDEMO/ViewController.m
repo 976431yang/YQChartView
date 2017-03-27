@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "YQChartBarView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    YQChartBarView *view = [YQChartBarView new];
+    
+    [self.view addSubview:view];
+    
 }
 
 
