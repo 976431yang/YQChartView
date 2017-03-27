@@ -17,6 +17,7 @@
 		95197E241E813CFD0067140A /* YQChartViewDEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95197E231E813CFD0067140A /* YQChartViewDEMOUITests.m */; };
 		959596B71E82E0C90035553A /* YQChartBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959596B61E82E0C90035553A /* YQChartBarView.m */; };
 		959597CC1E86C01F0035553A /* YQChartBar_YView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959597CB1E86C01F0035553A /* YQChartBar_YView.m */; };
+		9595984D1E88F02E0035553A /* YQCharBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9595984C1E88F02E0035553A /* YQCharBarCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		959596B61E82E0C90035553A /* YQChartBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQChartBarView.m; sourceTree = "<group>"; };
 		959597CA1E86C01F0035553A /* YQChartBar_YView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQChartBar_YView.h; sourceTree = "<group>"; };
 		959597CB1E86C01F0035553A /* YQChartBar_YView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQChartBar_YView.m; sourceTree = "<group>"; };
+		9595984B1E88F02E0035553A /* YQCharBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQCharBarCell.h; sourceTree = "<group>"; };
+		9595984C1E88F02E0035553A /* YQCharBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQCharBarCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				95197E051E813CFC0067140A /* ViewController.m */,
 				959596B51E82E0C90035553A /* YQChartBarView.h */,
 				959596B61E82E0C90035553A /* YQChartBarView.m */,
+				9595984B1E88F02E0035553A /* YQCharBarCell.h */,
+				9595984C1E88F02E0035553A /* YQCharBarCell.m */,
 				959597CA1E86C01F0035553A /* YQChartBar_YView.h */,
 				959597CB1E86C01F0035553A /* YQChartBar_YView.m */,
 				95197E071E813CFC0067140A /* Main.storyboard */,
@@ -291,6 +296,7 @@
 				95197E031E813CFC0067140A /* AppDelegate.m in Sources */,
 				95197E001E813CFC0067140A /* main.m in Sources */,
 				959596B71E82E0C90035553A /* YQChartBarView.m in Sources */,
+				9595984D1E88F02E0035553A /* YQCharBarCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,12 +40,18 @@
 //Y轴需要显示多少个基准值，初始值为4
 @property int YLabelsCount;
 
+//Y轴左侧显示基准值的宽度，默认80
+@property float YLabelWidth;
+
 //显示X轴
 @property BOOL showXAxis;
 //显示Y轴
 @property BOOL showYAxis;
 //显示参照线
 @property BOOL showDatumLine;
+
+//显示动画
+@property BOOL animation;
 
 
 #pragma -mark ---------------------------------间隔与宽度

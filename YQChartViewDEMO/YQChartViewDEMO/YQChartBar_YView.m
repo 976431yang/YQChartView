@@ -11,8 +11,9 @@
 @implementation YQChartBar_YView
 
 -(void)setWithFrame:(CGRect)frame
-           Labcount:(NSInteger *)count
+           Labcount:(int)count
               texts:(NSArray<NSString *> *)texts
+              showY:(BOOL)showYAxis
 {
     self.backgroundColor = [UIColor clearColor];
     for (UIView *subview in self.subviews) {
@@ -22,27 +23,36 @@
     self.frame = frame;
     
     //+1是因为上下各超出一半
-    CGFloat LableHeight = frame.size.height / ((int)count+1);
+    CGFloat LableHeight = frame.size.height / (count-1);
     
-    for (int i=0; i<=(int)count; i++) {
+    for (int i=0; i<count; i++) {
         
-        UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(0,
+        UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(5,
                                                                 i*LableHeight-(LableHeight*0.5),
-                                                                LableHeight,
-                                                                self.frame.size.width)];
+                                                                self.frame.size.width-10,
+                                                                LableHeight)];
         
         lab.numberOfLines = 1;
-        lab.textAlignment = NSTextAlignmentCenter;
-        lab.font = [UIFont systemFontOfSize:40];
+        lab.textAlignment = NSTextAlignmentRight;
+        lab.font = [UIFont systemFontOfSize:20];
         lab.adjustsFontSizeToFitWidth = YES;
+        lab.backgroundColor = [UIColor clearColor];
         
-        if(i == (int)count){
-            lab.text = @"0";
-        }else if(i<(int)count){
-            lab.text = (NSString *)(texts[i]);
-        }
+        lab.text = (NSString *)(texts[texts.count-i-1]);
         
         [self addSubview:lab];
+        
+        //NSLog(@"%@",lab.font);
+    }
+    
+    //显示Y轴
+    if(showYAxis){
+        UIView *YAxis = [[UIView alloc]initWithFrame:CGRectMake(frame.size.width-1,
+                                                                0,
+                                                                1,
+                                                                frame.size.height)];
+        YAxis.backgroundColor = [UIColor blackColor];
+        [self addSubview:YAxis];
     }
 }
 

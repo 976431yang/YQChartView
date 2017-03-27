@@ -11,7 +11,8 @@
 @interface YQChartBar_YView : UIView
 
 -(void)setWithFrame:(CGRect)frame
-           Labcount:(NSInteger *)count
-              texts:(NSArray<NSString *> *)texts;
+           Labcount:(int)count
+              texts:(NSArray<NSString *> *)texts
+              showY:(BOOL)showYAxis;
 
 @end
