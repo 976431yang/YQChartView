@@ -10,12 +10,13 @@
 
 @interface YQChartBar_YView : UIView
 
+//noNegMode
 -(void)setWithFrame:(CGRect)frame
            Labcount:(int)count
               texts:(NSArray<NSString *> *)texts
               showY:(BOOL)showYAxis
                font:(UIFont *)font;
-
+//negMode
 -(void)setnegModeWithFrame:(CGRect)frame
                   Labcount:(int)count
                    Uptexts:(NSArray<NSString *> *)uptexts

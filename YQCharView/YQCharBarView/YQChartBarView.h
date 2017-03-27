@@ -16,6 +16,9 @@
  */
 -(void)loadAndShow;
 
+//X轴上要显示的内容。请在数组中包含NSString格式。此数组会决定显示的数据数量。
+@property(nonatomic,strong)NSArray<NSString *> *XLables;
+
 /**
  *  传入一组数据，并设置颜色。请在数组中包含NSNumber类型。
  *
@@ -31,16 +34,14 @@
 
 
 #pragma -mark ---------------------------------X、Y轴相关
-//X轴上要显示的内容。请在数组中包含NSString格式。此数组会决定显示的数据数量。
-@property(nonatomic,strong)NSArray<NSString *> *XLables;
 
 //X轴显示Lable的字体(字体会在空间不够的时候自动减小字体大小)
 @property(nonatomic,strong)UIFont *XLableFont;
 
-//Y轴需要显示多少个基准值，初始值为4
+//Y轴需要显示多少个基准值
 @property int YLabelsCount;
 
-//Y轴左侧显示基准值的宽度，默认80
+//Y轴左侧显示基准值的宽度
 @property float YLabelWidth;
 
 //Y轴显示Lable的字体(字体会在空间不够的时候自动减小字体大小)
@@ -50,8 +51,6 @@
 @property BOOL showXAxis;
 //显示Y轴
 @property BOOL showYAxis;
-//显示参照线
-@property BOOL showDatumLine;
 
 //显示动画
 @property BOOL animation;

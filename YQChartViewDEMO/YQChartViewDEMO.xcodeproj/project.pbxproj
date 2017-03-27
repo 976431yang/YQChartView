@@ -15,9 +15,9 @@
 		95197E0E1E813CFC0067140A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95197E0C1E813CFC0067140A /* LaunchScreen.storyboard */; };
 		95197E191E813CFD0067140A /* YQChartViewDEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95197E181E813CFD0067140A /* YQChartViewDEMOTests.m */; };
 		95197E241E813CFD0067140A /* YQChartViewDEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95197E231E813CFD0067140A /* YQChartViewDEMOUITests.m */; };
-		959596B71E82E0C90035553A /* YQChartBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959596B61E82E0C90035553A /* YQChartBarView.m */; };
-		959597CC1E86C01F0035553A /* YQChartBar_YView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959597CB1E86C01F0035553A /* YQChartBar_YView.m */; };
-		9595984D1E88F02E0035553A /* YQCharBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9595984C1E88F02E0035553A /* YQCharBarCell.m */; };
+		959598561E8968150035553A /* YQCharBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 959598511E8968150035553A /* YQCharBarCell.m */; };
+		959598571E8968150035553A /* YQChartBar_YView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959598531E8968150035553A /* YQChartBar_YView.m */; };
+		959598581E8968150035553A /* YQChartBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959598551E8968150035553A /* YQChartBarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +54,12 @@
 		95197E1F1E813CFD0067140A /* YQChartViewDEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQChartViewDEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95197E231E813CFD0067140A /* YQChartViewDEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQChartViewDEMOUITests.m; sourceTree = "<group>"; };
 		95197E251E813CFD0067140A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		959596B51E82E0C90035553A /* YQChartBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQChartBarView.h; sourceTree = "<group>"; };
-		959596B61E82E0C90035553A /* YQChartBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQChartBarView.m; sourceTree = "<group>"; };
-		959597CA1E86C01F0035553A /* YQChartBar_YView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQChartBar_YView.h; sourceTree = "<group>"; };
-		959597CB1E86C01F0035553A /* YQChartBar_YView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQChartBar_YView.m; sourceTree = "<group>"; };
-		9595984B1E88F02E0035553A /* YQCharBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQCharBarCell.h; sourceTree = "<group>"; };
-		9595984C1E88F02E0035553A /* YQCharBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQCharBarCell.m; sourceTree = "<group>"; };
+		959598501E8968150035553A /* YQCharBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQCharBarCell.h; sourceTree = "<group>"; };
+		959598511E8968150035553A /* YQCharBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQCharBarCell.m; sourceTree = "<group>"; };
+		959598521E8968150035553A /* YQChartBar_YView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQChartBar_YView.h; sourceTree = "<group>"; };
+		959598531E8968150035553A /* YQChartBar_YView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQChartBar_YView.m; sourceTree = "<group>"; };
+		959598541E8968150035553A /* YQChartBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQChartBarView.h; sourceTree = "<group>"; };
+		959598551E8968150035553A /* YQChartBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQChartBarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +90,7 @@
 		95197DF21E813CFC0067140A = {
 			isa = PBXGroup;
 			children = (
+				9595984E1E8968150035553A /* YQCharView */,
 				95197DFD1E813CFC0067140A /* YQChartViewDEMO */,
 				95197E171E813CFD0067140A /* YQChartViewDEMOTests */,
 				95197E221E813CFD0067140A /* YQChartViewDEMOUITests */,
@@ -114,12 +115,6 @@
 				95197E021E813CFC0067140A /* AppDelegate.m */,
 				95197E041E813CFC0067140A /* ViewController.h */,
 				95197E051E813CFC0067140A /* ViewController.m */,
-				959596B51E82E0C90035553A /* YQChartBarView.h */,
-				959596B61E82E0C90035553A /* YQChartBarView.m */,
-				9595984B1E88F02E0035553A /* YQCharBarCell.h */,
-				9595984C1E88F02E0035553A /* YQCharBarCell.m */,
-				959597CA1E86C01F0035553A /* YQChartBar_YView.h */,
-				959597CB1E86C01F0035553A /* YQChartBar_YView.m */,
 				95197E071E813CFC0067140A /* Main.storyboard */,
 				95197E0A1E813CFC0067140A /* Assets.xcassets */,
 				95197E0C1E813CFC0067140A /* LaunchScreen.storyboard */,
@@ -153,6 +148,27 @@
 				95197E251E813CFD0067140A /* Info.plist */,
 			);
 			path = YQChartViewDEMOUITests;
+			sourceTree = "<group>";
+		};
+		9595984E1E8968150035553A /* YQCharView */ = {
+			isa = PBXGroup;
+			children = (
+				9595984F1E8968150035553A /* YQCharBarView */,
+			);
+			path = YQCharView;
+			sourceTree = "<group>";
+		};
+		9595984F1E8968150035553A /* YQCharBarView */ = {
+			isa = PBXGroup;
+			children = (
+				959598541E8968150035553A /* YQChartBarView.h */,
+				959598551E8968150035553A /* YQChartBarView.m */,
+				959598501E8968150035553A /* YQCharBarCell.h */,
+				959598511E8968150035553A /* YQCharBarCell.m */,
+				959598521E8968150035553A /* YQChartBar_YView.h */,
+				959598531E8968150035553A /* YQChartBar_YView.m */,
+			);
+			path = YQCharBarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,12 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				959597CC1E86C01F0035553A /* YQChartBar_YView.m in Sources */,
+				959598571E8968150035553A /* YQChartBar_YView.m in Sources */,
 				95197E061E813CFC0067140A /* ViewController.m in Sources */,
 				95197E031E813CFC0067140A /* AppDelegate.m in Sources */,
+				959598581E8968150035553A /* YQChartBarView.m in Sources */,
 				95197E001E813CFC0067140A /* main.m in Sources */,
-				959596B71E82E0C90035553A /* YQChartBarView.m in Sources */,
-				9595984D1E88F02E0035553A /* YQCharBarCell.m in Sources */,
+				959598561E8968150035553A /* YQCharBarCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

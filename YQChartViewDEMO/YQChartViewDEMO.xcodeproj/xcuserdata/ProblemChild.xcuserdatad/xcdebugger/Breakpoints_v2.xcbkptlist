@@ -9,12 +9,28 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "YQChartViewDEMO/YQChartBarView.m"
-            timestampString = "512307067.778793"
+            filePath = "YQCharView/YQCharBarView/YQChartBar_YView.m"
+            timestampString = "512330419.278463"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "259"
-            endingLineNumber = "259"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-setnegModeWithFrame:Labcount:Uptexts:downtexts:zeroRait:showY:font:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YQCharView/YQCharBarView/YQChartBarView.m"
+            timestampString = "512332298.126838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "-loadAndShow"
             landmarkType = "7">
          </BreakpointContent>
@@ -25,12 +41,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "YQChartViewDEMO/YQChartBarView.m"
-            timestampString = "512307067.778793"
+            filePath = "YQCharView/YQCharBarView/YQChartBarView.m"
+            timestampString = "512332298.126838"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "-loadAndShow"
             landmarkType = "7">
          </BreakpointContent>
@@ -41,28 +57,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "YQChartViewDEMO/YQChartBarView.m"
-            timestampString = "512307067.778793"
+            filePath = "YQCharView/YQCharBarView/YQChartBarView.m"
+            timestampString = "512332298.126838"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "253"
-            endingLineNumber = "253"
-            landmarkName = "-loadAndShow"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YQChartViewDEMO/YQChartBarView.m"
-            timestampString = "512307292.353344"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "258"
-            endingLineNumber = "258"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "-loadAndShow"
             landmarkType = "7">
          </BreakpointContent>
