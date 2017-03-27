@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     YQChartBarView *view = [[YQChartBarView alloc]initWithFrame:CGRectMake(0,
-                                                                           50,
+                                                                           200,
                                                                            self.view.frame.size.width,
                                                                            300)];
     
@@ -53,9 +53,9 @@
         
         int number = (rand()*rand()) % max;
         
-        if(number<0){
-            number = -number;
-        }
+//        if(number<0){
+//            number = -number;
+//        }
         
         [arr addObject:[NSNumber numberWithInt:number]];
     }

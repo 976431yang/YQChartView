@@ -13,6 +13,15 @@
 -(void)setWithFrame:(CGRect)frame
            Labcount:(int)count
               texts:(NSArray<NSString *> *)texts
-              showY:(BOOL)showYAxis;
+              showY:(BOOL)showYAxis
+               font:(UIFont *)font;
+
+-(void)setnegModeWithFrame:(CGRect)frame
+                  Labcount:(int)count
+                   Uptexts:(NSArray<NSString *> *)uptexts
+                 downtexts:(NSArray<NSString *> *)downtexts
+                  zeroRait:(CGFloat)rait
+                     showY:(BOOL)showYAxis
+                      font:(UIFont *)font;
 
 @end

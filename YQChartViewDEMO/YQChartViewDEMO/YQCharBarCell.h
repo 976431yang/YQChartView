@@ -13,7 +13,11 @@
 @property BOOL showTopNumberUp;
 @property BOOL showTopNumberDown;
 
+//-----------------------------------------------read
 @property(nonatomic,strong)UIView *dataView;
+@property BOOL negMode;
+@property(nonatomic,strong)UIView *UpDataView;
+@property(nonatomic,strong)UIView *DownDataView;
 
 -(void)setupWithDataComment:(NSArray<NSNumber *> *)Data
                      Colors:(NSArray <UIColor *> *)colors
@@ -21,6 +25,10 @@
                        font:(UIFont *)font
                         max:(NSNumber *)max
               GroupInterval:(CGFloat)GroupInterval
-             topNumberColor:(UIColor *)TopNumberColor;
+             topNumberColor:(UIColor *)TopNumberColor
+                cornerWidth:(CGFloat)cornerWidth
+                    negMode:(BOOL)negMode
+                       rait:(CGFloat)rait
+                        min:(NSNumber *)min;
 
 @end

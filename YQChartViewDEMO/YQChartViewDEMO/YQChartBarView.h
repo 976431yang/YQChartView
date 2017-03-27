@@ -43,6 +43,9 @@
 //Y轴左侧显示基准值的宽度，默认80
 @property float YLabelWidth;
 
+//Y轴显示Lable的字体(字体会在空间不够的时候自动减小字体大小)
+@property(nonatomic,strong)UIFont *YLableFont;
+
 //显示X轴
 @property BOOL showXAxis;
 //显示Y轴
@@ -64,6 +67,9 @@
 
 //初始bar宽度（每条数据的宽度）
 @property CGFloat barWidth;
+
+//bar的圆角
+@property CGFloat barCornerWidth;
 
 #pragma -mark ---------------------------------缩放参数
 //允许缩放
