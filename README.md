@@ -3,9 +3,9 @@
 
 iOS数据条形图，支持：动画、缩放、正负数等，并可高度自定义化。
 
-######（目前已完成数据条形图（YQChartBarView）,折线图敬请期待）
+##### （目前已完成数据条形图（YQChartBarView）,折线图敬请期待）
 
-### 效果：
+## 效果预览：
 
 #### 单组数据+开启动画
 ![image](https://github.com/976431yang/YQChartView/blob/master/YQChartViewDEMO/截图视频gif/单组数据有动画.gif) 
@@ -29,4 +29,3 @@ iOS数据条形图，支持：动画、缩放、正负数等，并可高度自�
 #### 可下载DEMO查看更多效果
 ![image](https://github.com/976431yang/YQChartView/blob/master/YQChartViewDEMO/截图视频gif/DEMO截图.PNG)
 
- 
