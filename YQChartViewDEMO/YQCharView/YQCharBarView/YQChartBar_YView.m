@@ -28,7 +28,10 @@
     self.frame = frame;
     
     //-1是因为上下各超出一半，然后lable显示的就在中间了
-    CGFloat LableHeight = frame.size.height / (count-1);
+    CGFloat LableHeight = frame.size.height*2;
+    if(count > 1){
+        LableHeight = frame.size.height / (count-1);
+    }
     
     for (int i=0; i<count; i++) {
         
@@ -43,6 +46,13 @@
         lab.adjustsFontSizeToFitWidth = YES;
         lab.backgroundColor = [UIColor clearColor];
         lab.text = (NSString *)(texts[texts.count-i-1]);
+        
+        if(count == 1){
+            lab.frame = CGRectMake(kyLabAround,
+                                   0,
+                                   self.frame.size.width-kyLabAround*2,
+                                   LableHeight);
+        }
         
         [self addSubview:lab];
     }
@@ -74,16 +84,18 @@
     self.frame = frame;
     
     //--------------------------------------------------0
-    UILabel *zeroLab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0,
-                                                                frame.size.width,
-                                                                20)];
-    zeroLab.textAlignment             = NSTextAlignmentRight;
-    zeroLab.numberOfLines             = 1;
-    zeroLab.adjustsFontSizeToFitWidth = YES;
-    zeroLab.text                      = @"0";
-    zeroLab.center = CGPointMake(zeroLab.center.x, frame.size.height*rait);
-    
-    [self addSubview:zeroLab];
+    if(count>0){
+        UILabel *zeroLab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0,
+                                                                    frame.size.width,
+                                                                    20)];
+        zeroLab.textAlignment             = NSTextAlignmentRight;
+        zeroLab.numberOfLines             = 1;
+        zeroLab.adjustsFontSizeToFitWidth = YES;
+        zeroLab.text                      = @"0";
+        zeroLab.center = CGPointMake(zeroLab.center.x, frame.size.height*rait);
+        
+        [self addSubview:zeroLab];
+    }
     
     //--------------------------------------------------Upview
     UIView *upview = [[UIView alloc]initWithFrame:CGRectMake(0,
@@ -94,7 +106,10 @@
     [self addSubview:upview];
 
     for (int i=0; i<count-1; i++) {
-        CGFloat LableHeight = upview.frame.size.height / (count-1);
+        CGFloat LableHeight = 0;
+        if(count>1){
+            LableHeight = upview.frame.size.height / (count-1);
+        }
         UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(kyLabAround,
                                                                 i*LableHeight-(LableHeight*0.5),
                                                                 upview.frame.size.width-kyLabAround*2,
@@ -120,7 +135,10 @@
     [self addSubview:downview];
     
     for (int i=1; i<count; i++) {
-        CGFloat LableHeight = downview.frame.size.height / (count-1);
+        CGFloat LableHeight = 0;
+        if(count>1){
+            LableHeight = upview.frame.size.height / (count-1);
+        }
         UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(kyLabAround,
                                                                 i*LableHeight-(LableHeight*0.5),
                                                                 downview.frame.size.width-kyLabAround*2,

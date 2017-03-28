@@ -50,9 +50,21 @@
 
 
 - (IBAction)switchAction:(id)sender {
+    //只更新设置，重新加载旧数据
+    [self UpdateSetting];
+    [self.BarView loadAndShow];
 }
 
 - (IBAction)slideAction:(id)sender {
+    
+    if(sender == self.slide_DataCount){
+        //更新设置并重新生成数据，显示
+        [self segmentChang:nil];
+    }else{
+        //只更新设置，重新加载旧数据
+        [self UpdateSetting];
+        [self.BarView loadAndShow];
+    }
 }
 
 - (IBAction)clearData:(id)sender {
@@ -82,8 +94,54 @@
         [self.BarView addDataGroup:Values forColor:[UIColor colorWithRed:0.484 green:0.567 blue:0.979 alpha:1.000]];
     }
     
+    //加载设置
+    [self UpdateSetting];
+    
     //加载并显示
     [self.BarView loadAndShow];
+}
+
+//更新设置
+-(void)UpdateSetting{
+    
+    self.BarView.showXAxis = self.switch_showXAxis.isOn;
+    self.BarView.showYAxis = self.switch_showYAxis.isOn;
+    self.BarView.animation = self.switch_animation.isOn;
+    self.BarView.allowPinch = self.switch_allowPinch.isOn;
+    
+    self.BarView.YLabelsCount = (int)self.slide_YLableCount.value;
+    self.Lable_YLabelCount.text = [NSString stringWithFormat:@"%d",(int)self.slide_YLableCount.value];
+    
+    self.BarView.YLabelWidth = (int)self.slide_YLeftWidth.value;
+    self.Lable_YLeftWidth.text = [NSString stringWithFormat:@"%d",(int)self.slide_YLeftWidth.value];
+    
+    self.BarView.XLableFont = [UIFont systemFontOfSize:(int)self.slide_XFontSize.value];
+    self.Lable_XFontSize.text = [NSString stringWithFormat:@"%d",(int)self.slide_XFontSize.value];
+    
+    self.BarView.YLableFont = [UIFont systemFontOfSize:(int)self.slide_YFontSIze.value];
+    self.Lable_YFontSize.text = [NSString stringWithFormat:@"%d",(int)self.slide_YFontSIze.value];
+    
+    self.BarView.barWidth = (int)self.slide_BarWidth.value;
+    self.Lable_BarWidth.text = [NSString stringWithFormat:@"%d",(int)self.slide_BarWidth.value];
+    
+    self.BarView.GroupInterval = (int)self.slide_GroupInterval.value;
+    self.Lable_GroupInterval.text = [NSString stringWithFormat:@"%d",(int)self.slide_GroupInterval.value];
+    
+    self.BarView.DataInterval = (int)self.slide_DataInterval.value;
+    self.Lable_DataInterval.text = [NSString stringWithFormat:@"%d",(int)self.slide_DataInterval.value];
+    
+    self.BarView.YLabelsCount = (int)self.slide_YLableCount.value;
+    self.Lable_YLabelCount.text = [NSString stringWithFormat:@"%d",(int)self.slide_YLableCount.value];
+    
+    self.BarView.minBarWidth = (int)self.slide_MinBarWidth.value;
+    self.Lable_MinBarWidth.text = [NSString stringWithFormat:@"%d",(int)self.slide_MinBarWidth.value];
+    
+    self.BarView.maxBarWidth = (int)self.slide_MaxBarWidth.value;
+    self.Lable_MaxBarWidth.text = [NSString stringWithFormat:@"%d",(int)self.slide_MaxBarWidth.value];
+    
+    self.Lable_DataCount.text = [NSString stringWithFormat:@"%d",(int)self.slide_DataCount.value];
+    
+    
 }
 
 - (void)viewDidLoad {
@@ -100,6 +158,8 @@
     [self.showView addSubview:self.BarView];
     
     [self segmentChang:nil];
+    
+    self.Lable_DataCount.adjustsFontSizeToFitWidth = YES;
 }
 
 -(NSArray *)creatDataWithCount:(int)count Neg:(BOOL)neg{

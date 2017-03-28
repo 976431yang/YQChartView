@@ -110,6 +110,10 @@
 
 -(void)loadAndShow{
     
+    if(self.YLabelsCount<0){
+        self.YLabelsCount = 0;
+    }
+    
     //--------------------------------------------------Y轴
     if(!self.YView){
         self.YView = [YQChartBar_YView new];
@@ -138,7 +142,10 @@
         //得到Y轴坐标
         for (int i=0; i<self.YLabelsCount; i++) {
             //计算
-            float eachPart = maxValue.floatValue / (self.YLabelsCount-1);
+            float eachPart = 0;
+            if(self.YLabelsCount>1){
+                eachPart = maxValue.floatValue / (self.YLabelsCount-1);
+            }
             float outFloat = i*eachPart;
             //转换一下
             NSString *outStr = [self converFloatToCustomStrWithFloat:outFloat];
@@ -170,9 +177,10 @@
                                           self.frame.size.height-kWidthUnderData,
                                           self.frame.size.width-self.YLabelWidth,
                                           kxAlixWidth);
+            self.XView.alpha = 1;
         }else{
             //不需要显示X轴
-            [self.XView removeFromSuperview];
+            self.XView.alpha = 0;
         }
         
     }else {
@@ -213,15 +221,22 @@
                                    font:self.YLableFont];
         
         //--------------------------------------------------X轴
-        if(!self.XView){
-            self.XView = [[UIView alloc]init];
-            self.XView.backgroundColor = [UIColor blackColor];
-            [self addSubview:self.XView];
+        if(self.showXAxis){
+            if(!self.XView){
+                self.XView = [[UIView alloc]init];
+                self.XView.backgroundColor = [UIColor blackColor];
+                [self addSubview:self.XView];
+            }
+            self.XView.frame = CGRectMake(self.YView.frame.size.width,
+                                          self.frame.size.height-kWidthUnderData,
+                                          self.frame.size.width-self.YLabelWidth,
+                                          kxAlixWidth);
+            self.XView.alpha = 1;
+        }else{
+            self.XView.alpha = 0;
         }
-        self.XView.frame = CGRectMake(self.YView.frame.size.width,
-                                      self.frame.size.height-kWidthUnderData,
-                                      self.frame.size.width-self.YLabelWidth,
-                                      kxAlixWidth);
+        
+        
     }
     
 
@@ -260,14 +275,16 @@
     [self.MainCollectionView layoutSubviews];
     [self.MainCollectionView reloadData];
     
-    if(self.animation){
+    if(self.allowPinch){
         UIPinchGestureRecognizer *Pinch = [[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(gestureFunction:)];
         //把手势添加到视图上
         [self.MainCollectionView addGestureRecognizer:Pinch];
         self.lastscale = 1;
     }else{
         for (UIGestureRecognizer *gu in self.MainCollectionView.gestureRecognizers) {
-            [self.MainCollectionView removeGestureRecognizer:gu];
+            if([gu isKindOfClass:[UIPinchGestureRecognizer class]]){
+                [self.MainCollectionView removeGestureRecognizer:gu];
+            }
         }
     }
     
