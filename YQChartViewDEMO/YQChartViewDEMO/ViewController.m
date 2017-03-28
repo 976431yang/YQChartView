@@ -153,14 +153,33 @@
                                                                    self.view.frame.size.width-32,
                                                                    (self.view.frame.size.width-32)/5*3)];
     
-    self.BarView.backgroundColor = [UIColor clearColor];
+    self.BarView.backgroundColor = [UIColor colorWithRed:0.917 green:0.928 blue:0.928 alpha:1.000];
     
     [self.showView addSubview:self.BarView];
     
     [self segmentChang:nil];
     
     self.Lable_DataCount.adjustsFontSizeToFitWidth = YES;
+    
+    
+    
+    
+    
 }
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+#if TARGET_IPHONE_SIMULATOR
+    NSLog(@"run on simulator");
+    [self alert];
+#define SIMULATOR_TEST
+#else
+    //不定义SIMULATOR_TEST这个宏
+    NSLog(@"run on device");
+#endif
+}
+
 
 -(NSArray *)creatDataWithCount:(int)count Neg:(BOOL)neg{
     
@@ -193,6 +212,24 @@
     }
     
     return arr;
+}
+
+
+-(void)alert{
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"建议使用真机运行"
+                                                                             message:@"动画效果在模拟器上运行可能会稍有卡顿，真机运行会比较流畅"
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"好的"
+                                                        style:UIAlertActionStyleDefault
+                                                      handler:^(UIAlertAction * _Nonnull action) {
+                                                          //NSLog(@"相关操作");
+                                                          self.switch_animation.on = NO;
+                                                          [self UpdateSetting];
+                                                          [self.BarView loadAndShow];
+                                                      }]];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

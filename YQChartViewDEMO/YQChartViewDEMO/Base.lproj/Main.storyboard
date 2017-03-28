@@ -35,7 +35,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRI-DA-FMO">
                                         <rect key="frame" x="16" y="40" width="343" height="206"/>
-                                        <color key="backgroundColor" red="0.95607947335025378" green="0.95607947335025378" blue="0.95607947335025378" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="FRI-DA-FMO" secondAttribute="height" multiplier="5:3" id="4Zc-J1-Ibo"/>
                                         </constraints>
@@ -98,7 +98,6 @@
                                             <constraint firstItem="AwQ-kZ-J5a" firstAttribute="top" secondItem="omk-SS-scv" secondAttribute="top" constant="7" id="PWp-by-eC0"/>
                                             <constraint firstAttribute="height" constant="45" id="Ruf-s5-Apm"/>
                                             <constraint firstAttribute="bottom" secondItem="t5r-w4-621" secondAttribute="bottom" constant="12" id="XTR-bi-HhK"/>
-                                            <constraint firstAttribute="width" constant="171" id="d3q-da-kjU"/>
                                             <constraint firstAttribute="trailing" secondItem="AwQ-kZ-J5a" secondAttribute="trailing" constant="12.5" id="pyx-3d-fhJ"/>
                                         </constraints>
                                     </view>
@@ -134,7 +133,6 @@
                                             <constraint firstAttribute="height" constant="45" id="CGt-05-LZZ"/>
                                             <constraint firstItem="zDB-Tw-08Q" firstAttribute="leading" secondItem="wI6-zx-F5P" secondAttribute="leading" constant="8" id="LsN-tK-sas"/>
                                             <constraint firstItem="Smv-Bj-CsS" firstAttribute="top" secondItem="wI6-zx-F5P" secondAttribute="top" constant="7" id="RoS-YR-lSP"/>
-                                            <constraint firstAttribute="width" constant="171" id="WH7-2I-jG0"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Jd-Ip-P3j">
@@ -167,7 +165,6 @@
                                             <constraint firstItem="jlZ-eH-3t1" firstAttribute="top" secondItem="4Jd-Ip-P3j" secondAttribute="top" constant="12" id="Nax-vA-7fI"/>
                                             <constraint firstAttribute="height" constant="45" id="ZMv-pt-boa"/>
                                             <constraint firstAttribute="bottom" secondItem="jlZ-eH-3t1" secondAttribute="bottom" constant="12" id="enJ-op-1oM"/>
-                                            <constraint firstAttribute="width" constant="171" id="mET-G5-Uwg"/>
                                             <constraint firstItem="k0U-gp-SAH" firstAttribute="top" secondItem="4Jd-Ip-P3j" secondAttribute="top" constant="7" id="qdu-dr-Rbl"/>
                                             <constraint firstItem="jlZ-eH-3t1" firstAttribute="leading" secondItem="4Jd-Ip-P3j" secondAttribute="leading" constant="8" id="qrc-Qe-pDX"/>
                                         </constraints>
@@ -201,7 +198,6 @@
                                             <constraint firstItem="KZZ-uY-UJq" firstAttribute="leading" secondItem="b37-zr-Z3u" secondAttribute="leading" constant="8" id="334-yd-sAq"/>
                                             <constraint firstItem="Qen-W7-51k" firstAttribute="top" secondItem="b37-zr-Z3u" secondAttribute="top" constant="7" id="HaS-j5-kxs"/>
                                             <constraint firstAttribute="height" constant="45" id="HbN-lg-nzo"/>
-                                            <constraint firstAttribute="width" constant="171" id="e8H-jl-Urv"/>
                                             <constraint firstAttribute="trailing" secondItem="Qen-W7-51k" secondAttribute="trailing" constant="12.5" id="fJU-fV-K3L"/>
                                             <constraint firstItem="KZZ-uY-UJq" firstAttribute="top" secondItem="b37-zr-Z3u" secondAttribute="top" constant="12" id="h2Q-fi-ptO"/>
                                             <constraint firstAttribute="bottom" secondItem="KZZ-uY-UJq" secondAttribute="bottom" constant="12" id="oZF-Hs-mOg"/>
@@ -535,6 +531,7 @@
                                     <constraint firstItem="wI6-zx-F5P" firstAttribute="top" secondItem="hF9-8C-WUT" secondAttribute="bottom" constant="10" id="ADr-RA-RcP"/>
                                     <constraint firstAttribute="trailing" secondItem="y8D-wc-iP1" secondAttribute="trailing" constant="16" id="Bz0-g8-SeB"/>
                                     <constraint firstAttribute="trailing" secondItem="kqD-Jf-BWa" secondAttribute="trailing" constant="16" id="Ead-sA-x0f"/>
+                                    <constraint firstItem="b37-zr-Z3u" firstAttribute="width" secondItem="wI6-zx-F5P" secondAttribute="width" id="FUM-ev-UDi"/>
                                     <constraint firstItem="NFx-we-IHy" firstAttribute="width" secondItem="FRI-DA-FMO" secondAttribute="width" id="H79-if-jpG"/>
                                     <constraint firstAttribute="bottom" secondItem="p4u-xI-th5" secondAttribute="bottom" constant="10" id="HcL-6f-wAP"/>
                                     <constraint firstItem="p4u-xI-th5" firstAttribute="width" secondItem="FRI-DA-FMO" secondAttribute="width" id="IKH-38-Ds1"/>
@@ -560,6 +557,7 @@
                                     <constraint firstItem="Azh-as-0nx" firstAttribute="top" secondItem="b37-zr-Z3u" secondAttribute="bottom" constant="5" id="ZD1-sP-4wS"/>
                                     <constraint firstItem="omk-SS-scv" firstAttribute="leading" secondItem="wI6-zx-F5P" secondAttribute="trailing" id="dNa-10-oge"/>
                                     <constraint firstItem="p4u-xI-th5" firstAttribute="top" secondItem="y8D-wc-iP1" secondAttribute="bottom" constant="5" id="dzy-mA-qa1"/>
+                                    <constraint firstItem="omk-SS-scv" firstAttribute="width" secondItem="wI6-zx-F5P" secondAttribute="width" id="eUN-Aj-s9c"/>
                                     <constraint firstItem="ymp-FO-81U" firstAttribute="width" secondItem="FRI-DA-FMO" secondAttribute="width" id="ee7-sE-bgN"/>
                                     <constraint firstItem="4Jd-Ip-P3j" firstAttribute="top" secondItem="wI6-zx-F5P" secondAttribute="bottom" constant="5" id="gKM-ro-Egv"/>
                                     <constraint firstItem="b37-zr-Z3u" firstAttribute="top" secondItem="omk-SS-scv" secondAttribute="bottom" constant="5" id="hG3-at-AfU"/>
@@ -586,6 +584,7 @@
                                     <constraint firstAttribute="trailing" secondItem="FRI-DA-FMO" secondAttribute="trailing" constant="16" id="xGh-WU-vyM"/>
                                     <constraint firstItem="Azh-as-0nx" firstAttribute="leading" secondItem="Fgh-2Y-B10" secondAttribute="leading" constant="16" id="yeE-Ts-Ug5"/>
                                     <constraint firstItem="hF9-8C-WUT" firstAttribute="leading" secondItem="Fgh-2Y-B10" secondAttribute="leading" constant="16" id="yt4-3f-d4x"/>
+                                    <constraint firstItem="4Jd-Ip-P3j" firstAttribute="width" secondItem="wI6-zx-F5P" secondAttribute="width" id="zgL-X8-A5R"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -633,7 +632,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.53073463268368"/>
+            <point key="canvasLocation" x="136.80000000000001" y="138.0809595202399"/>
         </scene>
     </scenes>
 </document>

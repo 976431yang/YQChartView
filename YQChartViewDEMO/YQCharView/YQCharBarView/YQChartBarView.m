@@ -60,7 +60,6 @@
 
 //基本设置
 -(void)defaultSetup{
-    self.backgroundColor = [UIColor whiteColor];
     self.YLabelsCount = 4;
     self.showXAxis = YES;
     self.showYAxis = YES;
