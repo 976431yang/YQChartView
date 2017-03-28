@@ -27,7 +27,7 @@
 ![image](https://github.com/976431yang/YQChartView/blob/master/YQChartViewDEMO/截图视频gif/其他设置.gif) 
 
 #### 可下载DEMO查看更多效果
-![image](https://github.com/976431yang/YQChartView/blob/master/YQChartViewDEMO/截图视频gif/DEMO截图.PNG)
+![image](https://github.com/976431yang/YQChartView/blob/master/YQChartViewDEMO/截图视频gif/DEMO截图.jpg)
 
 
 ## 如何使用：
