@@ -121,7 +121,7 @@
 
 ```
 
-#### 清楚所有数据
+#### 清除所有数据
 ```objective-c
     [BarView clearData];
 ```
